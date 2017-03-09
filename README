@@ -1,3 +1,11 @@
+ipaddr是google出品的使用非常方便的IP地址处理库，但pypi上的安装包不支持Python3
+本工程修改了不支持python3的几个地方
+1、去掉Python2的L长整形标记；
+2、去掉long类型转换，更换成int
+2、修改has_key函数，用in进行逻辑判断
+
+单元测试全部通过，本版本仅支持python3，你可以随意分发，以下是google的说明和联系方式
+
 ipaddr.py is a library for working with IP addresses, both IPv4 and IPv6.
 It was developed by Google for internal use, and is now open source.
 
